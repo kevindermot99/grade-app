@@ -10,7 +10,10 @@ cin>>names;
 cout<<names<<" What are your Marks: ";
 cin>>marks;
 
-if(marks < 100 &&  marks >= 90 ){
+if(marks > 100){
+	cout<<names<<" you entered Marks above 100";
+}
+else if(marks < 100 &&  marks >= 90 ){
 	cout<<names<<" you got an A+"<<endl;
 } 
 else if(marks >= 85){
@@ -42,9 +45,6 @@ else if(marks >= 40){
 }
 else if(marks > 40){
 	cout<<names<<" you got an F"<<endl;
-}
-else if(marks > 100){
-	cout<<names<<" you entered Marks above 100";
 }
 else{
 	cout<<names<<" Request Failed ! try again";
